@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="loginresume.css">
+    </head>
+
+    <body>
+        <h1>Resume Login</h1>
+
+        <label for="mail">Email: </label>
+        <input type="email" id="mail" name="mail">
+        <br/>
+        <label for="pw">Password: </label>
+        <input type="password" id="pw" name="pw">
+        <br/>
+
+      <div id="content">
+        <input 
+        class="submitbtn"
+        type="submit"
+        value="login"
+        onclick="auth()">
+      </div>  
+    </body>
+
+    <script>
+          function auth() {
+      let emailInput = document.querySelector("input#mail") //element
+      const pwInput = document.querySelector("input#pw")  //element
+
+      const mail = emailInput.value //string
+      const pw = pwInput.value  //string
+
+      const isCorrectEmail = email==="myemail@gmail.com"  //true or false, boolean
+      const isCorrectPassword = pw==="myPassword" //true or false, boolean
+      const areCredentialsTrue = isCorrectEmail && isCorrectPassword //true or false, boolean
+
+      console.log(email)
+      console.log(pw)
+
+      if (isCorrectEmail) {
+        document.querySelector('body').style.backgroundColor = 'green'
+      }
+      else {
+        document.querySelector('body').style.backgroundColor = 'red'
+      }
+        }
+     </script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FakeBook</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Fakebook</h2>
+
+    <div class="topnav">
+      <a href="home.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="search.html">Search</a>
+    </div>
+
+    <div id="content">
+      <label class="label" for="mail">Part 1 </label>
+      <input type="email" id="mail" name="mail" />
+      <br />
+      <label class="label" for="pw">Part 2 </label>
+      <input type="text" id="pw" name="pw" />
+      <div id="content-center">
+        <input type="checkbox" id="ck" name="ck" />
+        <label class="rmb" for="ck">Remember me</label>
+      </div>
+      <input
+        class="submitbtn"
+        type="submit"
+        value="Do Something"
+        onclick="validateCredentials()"
+      />
+      <div id="output">Output here</div>
+    </div>
+  </body>
+
+  <script>
+    function validateCredentials() {
+      const partOneInput = document.querySelector("input#mail"); //elements
+      const partTwoInput = document.querySelector("input#pw"); //elements
+
+      const partOne = partOneInput.value; //strings
+      const partTwo = partTwoInput.value; //strings
+
+      const partsCombined = partOne * partTwo;
+
+      const outputElement = document.getElementById("output");
+      outputElement.innerText = partsCombined;
+    }
+  </script>
+
+  <footer></footer>
+</html>

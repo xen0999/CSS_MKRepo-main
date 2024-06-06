@@ -1,0 +1,19 @@
+
+#infobar {
+    text-align: right;
+    background-color: rgb(255, 221, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: red;
+}
+
+
+body{
+    background-color: red;
+    color: rgb(255, 221, 0);
+}
+
+.sumtxt {
+    padding: 0px;
+    margin: 0px;
+}
