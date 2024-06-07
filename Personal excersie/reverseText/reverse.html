@@ -9,27 +9,29 @@
     </head>
 
     <body>
-        <div id="myInput">
+        <div id="revInputs">
             <div>
-                <label class="input" for="txtReverse">Subject</label>
-                <input id="myInput" type="text">
+                <label class="input" for="txtReverse">Input Text Here</label>
+                <input id="input" type="text">
             </div>
-            <br>
-            <div>       
-                <label class="input" for="txtReverse">Verb</label>
-                <input id="myInput" type="text">
-            </div>  
-            <br>             
-            <div>
-                <label class="input" for="txtReverse">Descriptor</label>
-                <input id="myInput" type="text">
-            </div>
-            <input class="submitBttn" type="submit" onclick="reverseWords()">
+            <input 
+            class="submitbtn" 
+            type="submit"  
+            value="Submit" 
+            name="subTxtReverse" 
+            id="submit">
+            <div id="output">Output Here</div>
         </div>  
+
     </body>
 
     <script>
-      
+      function reverseWords () {
+        let length = document.querySelector('input#subjectInput')
+
+      }
+      console.log(generatePass());
+
     </script>
 
 </html>
