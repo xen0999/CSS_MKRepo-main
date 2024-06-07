@@ -29,34 +29,38 @@
         class="submitbtn"
         type="submit"
         value="Do Something"
-        onclick="validateCredentials()"
+        onclick="generatePass()"
       />
       <div id="output">Output here</div>
     </div>
+    
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="search for names" >
+    <ul>
+      <li><a href="#">Adele</a></li>
+      <li><a href="#">Amber</a></li>
+      <li><a href="#">Alex</a></li>
+      <li><a href="#">Brian</a></li>
+      <li><a href="#">Brittany</a></li>
+    </ul>
   </body>
 
-  <script>
-    function validateCredentials() {
-      const partOneInput = document.querySelector("input#mail"); //elements
-      const partTwoInput = document.querySelector("input#pw"); //elements
+<script>
+  function generatePass() {
+    let length = document.querySelector('input#mail')
+    let pass = '';
+    let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
 
-      const partOne = partOneInput.value; //strings
-      const partTwo = partTwoInput.value; //strings
-
-      const partsCombined = partOne * partTwo;
-
-      const outputElement = document.getElementById("output");
-      outputElement.innerText = partsCombined;
-      
-      if (partsCombined.value == 12) {
-      document.body.style.background = orange
-    }
-    else {
-      document.body.style.background = red
-    }
+    for (let i = 1; i <= length; i++) {
+        let char = Math.floor(Math.random()* str.length + 1);
+        pass += str.charAt(char)
     }
 
-  </script>
+    const outputElement = document.getElementById("output");
+    outputElement.innerText = pass;
+}
+
+console.log(generatePass());
+</script>
 
   <footer></footer>
 </html>
