@@ -14,27 +14,25 @@
                 <label class="input\" for="txtReverse">Input Text Here</label>
                 <input id="words" type="text">
             </div>
-            <input 
-            class="submitbtn" 
-            type="submit"  
-            value="Submit" 
-            name="subTxtReverse" 
-            id="submit"
-            onclick="reverseWords()">
-            <div id="output">Output Here</div>
+            <input id="clickMe" type="button" value="clickme" onclick="revWords();" />
         </div>  
 
     </body>
 
+
+    
+
     <script>
-      function reverseWords () {
-        let originalString = document.querySelector('input#words');
+        //I'm lost lol. I don't understand what is going wrong. Please provide feedback if you can. Thank you. 
+      function revWords() {
+        let originalString = document.getElementById("words");
         let result = originalString.toLowerCase();  
-        const splitString = result.split(" ");
-        console.log(splitString);
-        let reverse = splitString.reverse();
+        let splitString = result.split(" ");
+        console.log(result);
+        let rev = splitString.reverse();
       }
-      console.log(reverse);
+
+      console.log(rev);
 
     </script>
 
