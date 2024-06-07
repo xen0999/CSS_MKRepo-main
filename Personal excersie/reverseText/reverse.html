@@ -11,15 +11,16 @@
     <body>
         <div id="revInputs">
             <div>
-                <label class="input" for="txtReverse">Input Text Here</label>
-                <input id="input" type="text">
+                <label class="input\" for="txtReverse">Input Text Here</label>
+                <input id="words" type="text">
             </div>
             <input 
             class="submitbtn" 
             type="submit"  
             value="Submit" 
             name="subTxtReverse" 
-            id="submit">
+            id="submit"
+            onclick="reverseWords()">
             <div id="output">Output Here</div>
         </div>  
 
@@ -27,10 +28,13 @@
 
     <script>
       function reverseWords () {
-        let length = document.querySelector('input#subjectInput')
-
+        let originalString = document.querySelector('input#words');
+        let result = originalString.toLowerCase();  
+        const splitString = result.split(" ");
+        console.log(splitString);
+        let reverse = splitString.reverse();
       }
-      console.log(generatePass());
+      console.log(reverse);
 
     </script>
 
