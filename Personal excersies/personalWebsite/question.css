@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: white;
+    font-family:Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    margin-top: 15%;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin: 0% 10% 50px 10%;
+   
+
+}
+
+a {
+    color: black;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin: 0px 30px 0px 0px;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+}
+
+a:hover {
+    color: rgb(58, 58, 58);
+    
+}

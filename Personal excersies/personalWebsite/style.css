@@ -11,7 +11,6 @@ body {
 
 }
 
-
 nav {
 
 }
@@ -72,16 +71,32 @@ a:hover{
     margin-right: 10px;
 }
 
-#insta {
+#gallery {
+ display: inline-block;   
+ float: right;
+ width: 70%;
+}
+
+.photos {
+    height: 250px;
+    width: 250px;
+    background-color: rgb(186, 186, 186);
+    margin: 20px;
+    display: inline-flex;
+    float: right;
+}
+
+.socials {
     display: inline-block;
     float: right;
-    margin: 70px;
+    margin: 30px;
     font-size: 40px;
 }
 
 form {
     float: right;
     align-content: right;
+    margin-right: 30px;
 }
 
 form h1 {
@@ -107,3 +122,6 @@ footer {
     justify-content: center;
   }
 
+/* 
+want to figure out how to adaptively change color of text.
+Want to figure out how to 
